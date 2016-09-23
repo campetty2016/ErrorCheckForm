@@ -1,0 +1,77 @@
+
+/* Styles Family Information Form Container, Instructions, Labels and Inputs, Error Messages, and Submit Button */
+.FamilyInfo {
+  display: flex;
+  .Background(#fff);
+  .BorderRadius;
+  border: 2px groove lightblue;
+  width: 500px;
+  height: 800px;
+  margin-top: 10px;
+  .Padding(5px, 5px, 5px, 5px);
+
+  form {
+    margin: auto;
+    flex-direction: column;
+
+    p {
+      margin-top: 20px;
+    }
+
+    input, label {
+        font-size: 100%;
+        display: block;
+      }
+
+    label {
+      font-weight: bold;
+      color: black;
+      margin-top: 5px;
+    }
+
+    input {
+      .BorderRadius;
+      .Padding(5px, 5px, 5px, 5px);
+      margin-bottom: 2px;
+      margin-top: 10px;
+      width: 400px;
+      height: 50px;
+      border: 1px inset silver;
+      text-indent: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+        border: 1px groove rgba(15,46,78,.84);
+        outline: none;
+      }
+
+      &:focus {
+        border: 1px groove rgba(15,46,78,.84);
+        outline: none;
+      }
+    }
+
+    .error {
+      .Error;
+      visibility: hidden;
+      margin-bottom: 2px;
+      margin-top: 2px;
+    }
+
+    #Submit{
+      margin-top: 15px;
+      .Background(cadetblue);
+      color: white;
+      border: 1px inset cadetblue;
+      font-weight: bold;
+      font-size: 1.5em;
+
+      &:hover{
+        .Background(rgba(15,46,78,.84));
+      }
+    }
+  }
+}

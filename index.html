@@ -1,0 +1,88 @@
+<!--
+
+  Author: Candace Petty
+  Date: 3/29/16
+  File: index.html
+
+-->
+
+<html>
+
+  <head>
+
+    <!-- Links to the Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Links to the Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Links to the Sweet Alert Stylesheet -->
+    <link rel="stylesheet" href="css/sweetalert.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Family Information Form Container -->
+    <div class="FamilyInfo">
+
+      <!-- Family Information Form -->
+      <form>
+
+        <!-- Form Heading -->
+        <h1>Welcome</h1>
+
+        <!-- Horizontal Line -->
+        <hr />
+
+        <!-- Form Instructions -->
+        <p>Please fill in your information.</p>
+
+        <!-- Displays Error If No Inputs Are Filled Out -->
+        <span class="error" id="AllError"></span>
+
+        <!-- Email Label and Input Box -->
+        <label>Email:</label>
+        <input id="email" type="email" placeholder="Email" />
+        <span class="error" id="EmailError"></span>
+
+        <!-- Sister's Name Label and Input Box -->
+        <label>Sister's Name:</label>
+        <input id="sisName" type="text" placeholder="Sister's Name" />
+        <span class="error" id="SNameError"></span>
+
+        <!-- Mother's Name Label and Input Box -->
+        <label>Mother's Name:</label>
+        <input id="MomName" type="text" placeholder="Mother's Name" />
+        <span class="error" id="MNameError"></span>
+
+        <!-- Father's Name Label and Input Box -->
+        <label>Father's Name:</label>
+        <input id="DadName" type="text" placeholder="Father's Name" />
+        <span class="error" id="FNameError"></span>
+
+        <!-- SSN Label and Input Box -->
+        <label>SSN:</label>
+        <input id="SSN" type="text" pattern="\d{3}-?\d{2}-?\d{4}" placeholder="SSN" />
+        <span class="error" id="SSNError"></span>
+
+        <!-- Check SSN Label and Input Box -->
+        <label>Check SSN:</label>
+        <input id="checkSSN" type="text" pattern="\d{3}-?\d{2}-?\d{4}" placeholder="Check SSN" />
+        <span class="error" id="SSNCheckError"></span>
+
+        <!-- Submit Button -->
+        <input id="Submit" type="submit" value="Submit" />
+
+      </form>
+
+    </div>
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/sweetalert.min.js"></script>
+    <script src="app/service.js"></script>
+    <script src="app/app.js"></script>
+
+  </body>
+
+</html>
